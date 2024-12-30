@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>BMI</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 98vw;
+            height: 97vh;
+            background-image: linear-gradient(pink, skyblue);
+            border: 1px solid black;
+        }
+        #text {
+
+            width: 750px;
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            gap: 90px;
+            padding: 20px;
+            box-sizing: border-box;
+            align-items: start;
+        }
+
+        #feets {
+            width: 150px;
+            height: 20px;
+            border: 1px solid black;
+        } 
+
+         #inches {
+            width: 150px;
+            height: 20px;
+            border: 1px solid black;
+        } 
+
+        label {
+            font-size: 19px;
+        }
+
+        #kg {
+            width: 150px;
+            height: 20px;
+            border: 1px solid black;
+        }
+
+        button {
+            width: 150px;
+            height: 23px;
+            border: 1px solid black;
+        }
+        text1{
+            width: 40%;
+           height:400px;
+           
+        }
+        #child {
+
+           width: 40%;
+           height:400px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+      
+        <center><h1>Body Mass Index Calculator</h1></center>
+
+        <div id="text">
+            <div class="text1">
+            <label>Enter your height in feets and inches</label><br><br>
+            <input type="tel" placeholder="Feets" id="feets">
+            <input type="tel" placeholder="inches" id="inches"><br><br>
+            <label>Enter your weight in kg</label><br><br>
+            <input type="tel" placeholder="kilogram and gram" id="kg">
+            <button onclik="calculationBMI()">calculation</button>
+             </div>
+            <div id="child">
+            <h2 style="font-style: italic;">Information</h2>
+            <p>Server UnderWeight:</p>
+            <p> UnderWeight:</p>
+            <p>NormalWeight:</p>
+            <p>OverWeight:</p>
+            <p>Obesity:</p>
+            <p>Severely Obese:</p>
+
+        </div>
+
+    </div>
+  
+
+    </div>
+</body>
+
+</html>
