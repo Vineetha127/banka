@@ -1,18 +1,84 @@
-.container{
-    width:98wh;
-    height:97vh;
-    background-image:linear-gradient(pink, skyblue) ;
-    border:1px solid black;
-    /* display: flex; 
-    justify-content: center; 
-    align-items: center; */
+/* Base Styles */
+.container {
+    width: 98vw;
+    height: 97vh;
+    background-image: linear-gradient(pink, skyblue);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Add padding to handle smaller screens */
+    box-sizing: border-box;
 }
-#text{
-    width:550px;
-    height:500px;
-    border:1px solid black;
+
+#text {
+    width: 550px;
+    height: auto; /* Allow height to adjust based on content */
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
     align-items: center;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white; /* Optional for contrast */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Input and Button Styling */
+input, button {
+    width: 100%; /* Full width for smaller devices */
+    max-width: 300px; /* Limit width on larger screens */
+    height: 40px;
+    margin: 10px 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block; /* Ensure labels are on their own line */
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #text {
+        width: 90%; /* Reduce width for smaller screens */
+        padding: 15px;
+    }
+
+    input, button {
+        max-width: 100%; /* Remove max-width to allow full usage of space */
+        font-size: 14px; /* Slightly smaller text for compact layout */
+    }
+
+    label {
+        font-size: 16px; /* Adjust label size */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    #text {
+        width: 95%;
+        padding: 10px;
+    }
+
+    input, button {
+        font-size: 12px; /* Smaller font for very small devices */
+        height: 35px; /* Adjust height for compact design */
+    }
+
+    label {
+        font-size: 14px; /* Adjust label size for smaller screens */
+    }
 }
